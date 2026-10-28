@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Driver</title>
+    <link rel="shortcut icon" href="images/favicon-verstappen.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="brand-container">
+                <h2 class="brand-title">RentADriver</h2>
+            </div>
+        
+            <div class="link-container">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#drivers">Drivers</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <button class="book-button" onclick="window.location.href='book.html'">Book A Driver</button>
+        </nav>
+        <div class="flex-container">
+            <div class="text-container">
+                <h1>Wherever You're Going,<br class="mobile-break"> We'll Get You There.</h1>
+                <p>Enjoy a comfortable and convenient journey with a reliable driver ready <br class="mobile-break">
+                to take you wherever you need to go. Book your driver today and leave <br class="mobile-break">
+                the driving to us.</p>
+                <div class="hero-buttons">
+                    <button class="primary-button" onclick="window.location.href='#drivers'">Find Your Driver</button>
+                    <button class="secondary-button" onclick="window.location.href='#about'">Explore Services</button>
+                </div>
+            </div>
+            <img src="images/hero-verstappen.jpg">
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="about-header">
+            <p class="header-label">OUR SERVICES</p>
+            <h2 class="header-h2">A Driver for Every Trip.</h2>
+            <p class="header-p">Whether you're heading to work, catching a flight, or going out<br class="mobile-break"> for a special occasion, we've got your ride covered.</p>
+        </div>
+        <div class="about-container">
+            <div class="about-card">
+                <h3>Personal Trips</h3>
+                <p>Get a driver for errands, appointments, or wherever the day takes you.</p>
+            </div>
+            
+            <div class="about-card">
+                <h3>Business Travel</h3>
+                <p>Get to meetings, work events, and business trips without the hassle of driving.</p>
+            </div>
+            
+            <div class="about-card">
+                <h3>Airport Rides</h3>
+                <p>Make getting to or from the airport easier with a ride planned around your schedule.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Special Events</h3>
+                <p>Have a wedding, party, or big event coming up? Let someone else handle the drive.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="drivers">
+        <div class="drivers-header">
+            <p class="header-label">OUR DRIVERS</p>
+            <h2 class="header-h2">Find the Right Driver for You.</h2>
+            <p class="header-p">Browse our professional drivers and find the right match <br class="mobile-break">for your schedule, destination, and travel needs.</p>
+        </div>
+        <div class="driver-container">
+            <div class="driver-card">
+                <img src="images/card-verstappen.jpg">
+                <h3>Max Verstappen</h3>
+                <p>Driver ID: 0003</p>
+                <button onclick="window.location.href='book.html'">Book Now</button>
+            </div>
+
+            <div class="driver-card">
+                <img src="images/card-piastri.jpg">
+                <h3>Oscar Piastri</h3>
+                <p>Driver ID: 0081</p>
+                <button onclick="window.location.href='book.html'">Book Now</button>
+            </div>
+
+            <div class="driver-card">
+                <img src="images/card-leclerc.jpg">
+                <h3>Charles Leclerc</h3>
+                <p>Driver ID: 0016</p>
+                <button onclick="window.location.href='book.html'">Book Now</button>
+            </div>
+
+            <div class="driver-card">
+                <img src="images/card-antonelli.jpg">
+                <h3>Kimi Antonelli</h3>
+                <p>Driver ID: 0012</p>
+                <button onclick="window.location.href='book.html'">Book Now</button>
+            </div>
+
+            <div class="driver-card">
+                <img src="images/card-hamilton.jpg">
+                <h3>Lewis Hamilton</h3>
+                <p>Driver ID: 0044</p>
+                <button onclick="window.location.href='book.html'">Book Now</button>
+            </div>
+
+            <div class="driver-card">
+                <img src="images/card-norris.jpg">
+                <h3>Lando Norris</h3>
+                <p>Driver ID: 0004</p>
+                <button onclick="window.location.href='book.html'">Book Now</button>
+            </div>
+        </div>
+        <a href="drivers.html" class="view-all-a"><button class="view-all">View All Drivers</button></a>
+    </section>
+
+    <section id="reviews">
+        <div class="review-header">
+            <p class="header-label">CLIENT REVIEWS</p>
+            <h2 class="header-h2">What Our Client Says.</h2>
+            <p class="header-p">Read feedback from clients about their experiences <br class="mobile-break">with our professional drivers and services.</p>
+        </div>
+
+        <div class="review-container">
+            <div class="client-reviews">
+                <i class="iconoir-quote"></i>
+                <p class="p-reviews">Lala nabangga kami</p>
+                <hr>
+                <div class="client-info">
+                    <p class="client-profile">JD</p>
+                    <p class="client-name">Juan Dela Cruz</p>
+                </div>
+            </div>
+
+            <div class="client-reviews">
+                <i class="iconoir-quote"></i>
+                <p class="p-reviews">Goods naman yung packaging</p>
+                <hr>
+                <div class="client-info">
+                    <p class="client-profile">BA</p>
+                    <p class="client-name">Baby 123</p>
+                </div>
+            </div>
+
+            <div class="client-reviews">
+                <i class="iconoir-quote"></i>
+                <p class="p-reviews">Legit pumuti singit ko</p>
+                <hr>
+                <div class="client-info">
+                    <p class="client-profile">JC</p>    
+                    <p class="client-name">Jaja Coleen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="cta-header">
+            <p class="header-label">READY TO GO?</p>
+            <h2 class="header-h2">Your Next Journey Starts Here.</h2>
+            <p class="header-p">Sit back, relax, and let us handle the drive.<br class="mobile-break">Find a driver who fits your needs today.</p>
+            <div class="cta-buttons">
+                <button class="primary-button" onclick="window.location.href='book.html'">Book Now</button>
+                <button class="secondary-button" onclick="window.location.href='book.html'">Check Our Drivers</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer">
+            <h2>RentADriver</h2>
+            <div class="social-icons">
+                <a href="#"><i class="iconoir-facebook-tag"></i></a>
+                <a href="#"><i class="iconoir-instagram"></i></a>
+                <a href="#"><i class="iconoir-tiktok"></i></a>
+                <a href="#"><i class="iconoir-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
