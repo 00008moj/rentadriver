@@ -14,6 +14,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
     <nav>
         <div class="brand-container">
             <h2 class="brand-title">RentADriver</h2>
@@ -28,63 +29,64 @@
         <button class="book-button">Book A Driver</button>
     </nav>
 
-    <section id="contact" height="100vh">
-        <div class="contact-header">
-            <div>
-                <p class="header-label">BOOK A RIDE</p>
-                <h2>Let's Plan Your Trip.</h2>
-                <p>Fill in the details below to get started.</p>
+    <main>
+        <section id="contact" height="100vh">
+            <div class="contact-header">
+                <div>
+                    <p class="header-label">BOOK A RIDE</p>
+                    <h2>Let's Plan Your Trip.</h2>
+                    <p>Fill in the details below to get started.</p>
+                </div>
             </div>
-        </div>
 
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="">
-            <input type="hidden" name="subject" value="New Driver Booking">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="">
+                <input type="hidden" name="subject" value="New Driver Booking">
 
-            <div class="book-form">
-                <div class="full-name">
-                    <label for="full-name" class="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="Full Name" placeholder="Enter your full name" required>
+                <div class="book-form">
+                    <div class="full-name">
+                        <label for="full-name" class="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="Full Name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="contact-number">
+                        <label for="contact-number">Contact Number</label>
+                        <input type="tel" id="contact-number" name="Contact Number" placeholder="Enter your contact number" required>
+                    </div>
+
+                    <div class="select-driver">
+                        <label for="driver">Choose a Driver</label>
+                        <select id="driver" name="Driver" required>
+                            <option value="" disabled selected>Select a driver</option>
+                            <option value="Max Verstappen">Max Verstappen</option>
+                            <option value="Oscar Piastri">Oscar Piastri</option>
+                            <option value="Charles Leclerc">Charles Leclerc</option>
+                            <option value="Kimi Antonelli">Kimi Antonelli</option>
+                            <option value="Lewis Hamilton">Lewis Hamilton</option>
+                            <option value="Lando Norris">Lando Norris</option>
+                        </select>
+                    </div>
+
+                    <div class="pickup-location">
+                        <label for="pickup">Pickup Location</label>
+                        <input type="text" id="pickup" name="Pickup Location" placeholder="Enter pickup location" required>
+                    </div>
+
+                    <div class="destination">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" name="Destination" placeholder="Enter destination" required>
+                    </div>
+
+                    <div class="booking-date">
+                        <label for="booking-date">Date</label>
+                        <input type="date" id="booking-date" required>
+                    </div>
+
+                    <button class="submit-button">Submit</button>
                 </div>
-
-                <div class="contact-number">
-                    <label for="contact-number">Contact Number</label>
-                    <input type="tel" id="contact-number" name="Contact Number" placeholder="Enter your contact number" required>
-                </div>
-
-                <div class="select-driver">
-                    <label for="driver">Choose a Driver</label>
-                    <select id="driver" name="Driver" required>
-                        <option value="" disabled selected>Select a driver</option>
-                        <option value="Max Verstappen">Max Verstappen</option>
-                        <option value="Oscar Piastri">Oscar Piastri</option>
-                        <option value="Charles Leclerc">Charles Leclerc</option>
-                        <option value="Kimi Antonelli">Kimi Antonelli</option>
-                        <option value="Lewis Hamilton">Lewis Hamilton</option>
-                        <option value="Lando Norris">Lando Norris</option>
-                    </select>
-                </div>
-
-                <div class="pickup-location">
-                    <label for="pickup">Pickup Location</label>
-                    <input type="text" id="pickup" name="Pickup Location" placeholder="Enter pickup location" required>
-                </div>
-
-                <div class="destination">
-                    <label for="destination">Destination</label>
-                    <input type="text" id="destination" name="Destination" placeholder="Enter destination" required>
-                </div>
-
-                <div class="booking-date">
-                    <label for="booking-date">Date</label>
-                    <input type="date" id="booking-date" required>
-                </div>
-
-                <button class="submit-button">Submit</button>
-            </div>
-        </form>
-    </section>
-    
+            </form>
+        </section>
+    </main>
 
     <footer id="footer">
         <div class="footer">
