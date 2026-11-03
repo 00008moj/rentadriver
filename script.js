@@ -45,3 +45,8 @@ ScrollReveal().reveal(".cta-buttons button", {
     interval: 200,
     reset: false
 });
+
+window.addEventListener("pageshow", () => {
+    document.querySelector("form").reset();
+
+});
