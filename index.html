@@ -17,10 +17,14 @@
     <header id="home">
         <nav>
             <div class="brand-container">
-                <h2 class="brand-title">RentADriver</h2>
+                <a href="index.html"><h2 class="brand-title">RentADriver</h2></a>
             </div>
-        
+            <input type="checkbox" id="sidebar-active" class="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar"><i class="iconoir-menu"></i></label> 
+            
+            <label for="sidebar-active" class="overlay"></label>
             <div class="link-container">
+                <label for="sidebar-active" class="close-sidebar"><i class="iconoir-xmark"></i></label>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#drivers">Drivers</a>
@@ -28,6 +32,7 @@
             </div>
             <button class="book-button" onclick="window.location.href='book.html'">Book A Driver</button>
         </nav>
+        
         <div class="flex-container">
             <div class="text-container">
                 <h1>Wherever You're Going,<br class="mobile-break"> We'll Get You There.</h1>
@@ -46,8 +51,7 @@
     <main>
         <section id="about">
             <div class="about-header">
-                <p class="header-label">OUR SERVICES</p>
-                <h2 class="header-h2">A Driver for Every Trip.</h2>
+                <h2 class="header-h2">Our Services</h2>
                 <p class="header-p">Whether you're heading to work, catching a flight, or going out<br class="mobile-break"> for a special occasion, we've got your ride covered.</p>
             </div>
             <div class="about-container">
@@ -75,8 +79,7 @@
 
         <section id="drivers">
             <div class="drivers-header">
-                <p class="header-label">OUR DRIVERS</p>
-                <h2 class="header-h2">Find the Right Driver for You.</h2>
+                <h2 class="header-h2">Our Drivers</h2>
                 <p class="header-p">Browse our professional drivers and find the right match <br class="mobile-break">for your schedule, destination, and travel needs.</p>
             </div>
             <div class="driver-container">
@@ -140,8 +143,7 @@
 
         <section id="reviews">
             <div class="review-header">
-                <p class="header-label">CLIENT REVIEWS</p>
-                <h2 class="header-h2">What Our Client Says.</h2>
+                <h2 class="header-h2">Client Reviews</h2>
                 <p class="header-p">Read feedback from clients about their experiences <br class="mobile-break">with our professional drivers and services.</p>
             </div>
 
@@ -186,8 +188,7 @@
 
         <section id="cta">
             <div class="cta-header">
-                <p class="header-label">READY TO GO?</p>
-                <h2 class="header-h2">Your Next Journey Starts Here.</h2>
+                <h2 class="header-h2">Ready to Go?</h2>
                 <p class="header-p">Sit back, relax, and let us handle the drive.<br class="mobile-break"> Find a driver who fits your needs today.</p>
                 <div class="cta-buttons">
                     <button class="primary-button" onclick="window.location.href='book.html'">Book Now</button>
@@ -204,7 +205,6 @@
                 <a href="#"><i class="iconoir-facebook-tag"></i></a>
                 <a href="#"><i class="iconoir-instagram"></i></a>
                 <a href="#"><i class="iconoir-tiktok"></i></a>
-                <a href="#"><i class="iconoir-telegram"></i></a>
             </div>
         </div>
     </footer>
