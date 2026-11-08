@@ -4,8 +4,7 @@ ScrollReveal().reveal(".flex-container, #about, #drivers, #reviews, #cta, #conta
     duration: 450,
     delay: 0,
     easing: "ease-out",
-    reset: false,
-    viewFactor: 0.15
+    reset: false
 });
 
 ScrollReveal().reveal(".hero-buttons button", {
