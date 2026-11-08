@@ -458,6 +458,10 @@ select {
     cursor: pointer;
 }
 
+select:hover {
+    border: 1px solid var(--input-hover);
+}
+
 ::picker(select) {
     appearance: base-select;
     border: none;
@@ -493,6 +497,27 @@ select option:checked {
 
 select option::checkmark {
     content: "";
+}
+
+.book-form input[type="date"] {
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 0.75rem 0.875rem;
+    border: 1px solid var(--input-border);
+    border-radius: 0.625rem;
+    background: var(--input-bg);
+    color: var(--input-text);
+    font: inherit;
+    cursor: pointer;
+}
+
+.book-form input[type="date"]:hover {
+    border: 1px solid var(--input-hover);
+}
+
+.book-form input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    font-size: .9rem;
 }
 
 .submit-button {
@@ -688,6 +713,10 @@ select option::checkmark {
 
     .footer a {
         font-size: 1.5rem;
+    }
+
+    input[type="date"] {
+        font-size: 1rem;
     }
 
 }
