@@ -716,7 +716,7 @@ select option::checkmark {
     }
 
     input[type="date"] {
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
 
 }
