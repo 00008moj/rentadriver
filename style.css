@@ -581,10 +581,10 @@ select option::checkmark {
     }
 
     .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
     }
 
     .hero-buttons button {
@@ -716,7 +716,7 @@ select option::checkmark {
     }
 
     input[type="date"] {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
 }
